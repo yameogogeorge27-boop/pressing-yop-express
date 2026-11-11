@@ -57,7 +57,7 @@ nav a{
     width: 100%;
     height: auto;
 }
-.container{
+.container, .desc-box{
     width: 80%;
     margin: 0 auto;
     height: 50vh;
@@ -78,7 +78,7 @@ nav a{
 .container h2,.container p{
     color: var(--bg-body);
 }
-#cta,.cta{
+#cta,.cta,#ca{
     display: inline-block;
     background-color: var(--button);
     padding: 1em;
@@ -88,13 +88,16 @@ nav a{
     font-size: 1.1em;
     width: 15%;
 }
+#ca{
+    width: 30%;
+}
 /* on s'attaque aux h2 généraux et et la parties des services */
 .mob h2{
     text-align: center;
     padding: 1em 0;
     font-weight: 500;
 }
-.card_container{
+.card_container, .team-container{
     width: 100%;
     height: auto;
     padding: 1em;
@@ -103,11 +106,29 @@ nav a{
     justify-content: space-evenly;
     align-items: center;
 }
-.card{
+.card,.team,.mobZ{
     border: 2px solid var(--card_borders);
     padding: 2em ;
     border-radius: 1em;
     background-color: white;
+}
+.pic-box{
+    width: 290px;
+    height: 40vh;
+    
+}
+.pic-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5em;
+}
+.desc-box{
+    width: 290px;
+    height: 25vh;
+}
+.desc-box span {
+    color: var(--button);
 }
 /* On passe au formulaire de contacts */
 form{
@@ -166,4 +187,313 @@ footer h3{
 }
 footer p{
     color:white;
+}
+/* LA PARTIE DES EQUIPS */
+.mobZ{
+    width: 80%;
+    margin: 1em auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.teamZ{
+    width: 48%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+@media screen and (max-width:768px){
+    h1{
+    text-align: center;
+    min-width: 100%;
+}
+    nav{
+    min-width: 100%;
+    text-align: center;
+}
+nav a{
+    display: inline-block;
+    padding:  0.5em;
+    width: 30%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+.container h2{
+    font-size: 2em;
+    font-weight: 500;
+    text-align: center;
+}
+.container p{
+    font-size: 1.1em;
+    text-align: center;
+}
+#cta,.cta,#ca{
+    display: inline-block;
+    background-color: var(--button);
+    padding: 1em;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 0.5em;
+    font-size: 1.1em;
+    width: 60%;
+}
+.card_container, .team-container{
+    width: 100%;
+    height: auto;
+    padding: 1em 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.card,.team,.mobZ{
+    border: 2px solid var(--card_borders);
+    margin: 0.5em ;
+    border-radius: 1em;
+    background-color: white;
+    width: 70%;
+    height: auto;
+}
+form input{
+    width: 80%;
+    padding: 1em 0;
+    border-radius: 0.5em;
+    text-align: left;
+    text-indent: 5px;
+    margin: 1em;
+    border: none;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.203);
+    color:var(--banner)
+}
+form textarea{
+    height: 20vh;
+    width: 80%;
+    padding: 1em 0;
+    border-radius: 1em;
+    text-align: left;
+    margin: 1em;
+    border: none;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.203);
+    color:var(--banner);
+    text-indent: 5px;
+}
+table{
+    width: 90%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    text-align: center;
+}
+header,footer{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 1.5em;
+}
+.mob h2{
+    text-align: center;
+    padding: 0.5em 0;
+    font-weight: 500;
+}
+.card,.team,.mobZ{
+    border: 2px solid var(--card_borders);
+    padding: 2em ;
+    width: 90%;
+    margin: 1em auto;
+    border-radius: 1em;
+    background-color: white;
+}
+.pic-box{
+    width: 100%;
+    height: 30vh;
+    
+}
+.pic-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1em;
+}
+.desc-box{
+    width: 100%;
+    height: 25vh;
+    text-align: center;
+}
+.desc-box span {
+    color: var(--button);
+}
+.mobZ{
+    width: 90%;
+    margin: 1em auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.teamZ{
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding: 1em 0;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+#ca{
+    width: 60%;
+}
+}
+@media screen and (max-width:450px){
+        h1{
+    text-align: center;
+    min-width: 100%;
+}
+    nav{
+    min-width: 100%;
+    text-align: center;
+}
+nav a{
+    display: inline-block;
+    padding:  0.5em;
+    width: 30%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+.container h2{
+    font-size: 2em;
+    font-weight: 500;
+    text-align: center;
+}
+.container p{
+    font-size: 1.1em;
+    text-align: center;
+}
+#cta,.cta,#ca{
+    display: inline-block;
+    background-color: var(--button);
+    padding: 1em;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 0.5em;
+    font-size: 1.1em;
+    width: 60%;
+}
+.card_container, .team-container{
+    width: 100%;
+    height: auto;
+    padding: 1em 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.card,.team,.mobZ{
+    border: 2px solid var(--card_borders);
+    margin: 0.5em ;
+    border-radius: 1em;
+    background-color: white;
+    width: 70%;
+    height: auto;
+}
+form input{
+    width: 80%;
+    padding: 1em 0;
+    border-radius: 0.5em;
+    text-align: left;
+    text-indent: 5px;
+    margin: 1em;
+    border: none;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.203);
+    color:var(--banner)
+}
+form textarea{
+    height: 20vh;
+    width: 80%;
+    padding: 1em 0;
+    border-radius: 1em;
+    text-align: left;
+    margin: 1em;
+    border: none;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.203);
+    color:var(--banner);
+    text-indent: 5px;
+}
+table{
+    width: 90%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    text-align: center;
+}
+header,footer{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 1.5em;
+}
+.mob h2{
+    text-align: center;
+    padding: 0.5em 0;
+    font-weight: 500;
+}
+.card,.team,.mobZ{
+    border: 2px solid var(--card_borders);
+    padding: 2em ;
+    width: 90%;
+    margin: 1em auto;
+    border-radius: 1em;
+    background-color: white;
+}
+.pic-box{
+    width: 100%;
+    height: 30vh;
+    
+}
+.pic-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1em;
+}
+.desc-box{
+    width: 100%;
+    height: 25vh;
+    text-align: center;
+}
+.desc-box span {
+    color: var(--button);
+}
+.mobZ{
+    width: 90%;
+    margin: 1em auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.teamZ{
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding: 1em 0;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+#ca{
+    width: 80%;
+}
 }
